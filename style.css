@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Troca de modos */
+:root {
+  /*Serve para trocar o modos*/
+  --text-color: white;
+  --background: url(./Assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(255, 255, 255, 0.041);
+  --backgrund-button: url(./Assets/MoonStars.svg);
+}
+
+.light {
+  /*Serve para trocar o modos*/
+  --text-color: black;
+  --background: url(./Assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.1);
+  --backgrund-button: url(./Assets/Sun.svg);
+}
+/*Corpo*/
+body {
+  /*Muda o background do site selecionando apenas um atributo*/
+
+  /*background-image: url(./Assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;/**/
+
+  background: var(--background) no-repeat top center/cover; /*Usa apenas uma linha */
+}
+
+body * {
+  /*Muda a fonte para todo o Site usando o seletor Universal(*)*/
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+/*Caixa do site*/
+#Contanier {
+  width: 360px;
+  margin: 56px auto 0px auto;
+  padding: 0 24px;
+}
+/*Profile*/
+#profile {
+  text-align: center; /*Alinha toda a caixa da tag Profile ao meio*/
+  padding: 12px; /*Da um espaçamento interno de 12 px para todos os lados*/
+}
+
+#profile img {
+  width: 112px; /*Diz o tamando da imagem*/
+  border-radius: 50%;
+}
+
+#profile p {
+  /*Diz as caracteristas da tag(p*/
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 20px;
+}
+/*Switch|Button*/
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 0 auto;
+}
+
+#switch button {
+  /*Diz o tamanhdo do botão*/
+  width: 32px;
+  height: 32px;
+  background: white var(--backgrund-button) no-repeat center; /*Diz o background do botão*/
+  border-radius: 50%; /*Faz ele ficar em circulo*/
+  border: 0; /*Tira a borda padrao da tag (button)*/
+
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.light #switch button {
+  right: 0px;
+  left: initial;
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+
+  border-radius: 9999px;
+}
+
+/*Links-Botoes*/
+
+ul {
+  /*Arumando a lista no geral*/
+  list-style: none; /*Tira as bolinhas padroes da tag(ul)lista*/
+
+  display: flex; /*Permite organizar elementos de forma flexisivel, em linha ou coluna*/
+  flex-direction: column; /*Diz a orientação do Display Flez*/
+  padding: 24px 0;
+  gap: 16px; /*Uma especie de borda entre os elementos da lista*/
+}
+
+ul li a {
+  /*Arrumando o texto da lista e adicionando bordas*/
+  display: flex;
+  align-items: center; /*Alinha os elementos ao meio horizontalmente*/
+  justify-content: center; /*ALinha os elementos ao meio verticalmente*/
+
+  background: var(--surface-color); /*Diz a cor de fundo do texto*/
+  border: 1px solid var(--stroke-color); /*Diz a borda do texto e sua cor*/
+  border-radius: 8px; /*Arredonda a caixa*/
+
+  backdrop-filter: blur(4px); /*Adiciona desfoque a caixa*/
+
+  text-decoration: none; /*Tira a linha que fica em baixo do elemento*/
+  font-weight: 500;
+
+  padding: 16px; /*Da um espacemento interno dos elementos em todas as direcoes*/
+
+  transition: background 0.5s;
+}
+
+ul li a:hover {
+  /*Acionando quando o mouse esta em cima*/
+  /*Muda a background do fundo do botão*/
+  background: var(--surface-color-hover);
+  /*Muda a borda da cor do botão*/
+  border: 1.5px solid var(--text-color);
+}
+
+/*Social links*/
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+  font-size: 24px;
+}
+
+#social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  border-radius: 50%;
+  transition: background 0.5s;
+}
+
+#social-links a:hover {
+  background: var(--surface-color-hover);
+}
+/*Cabecario*/
+footer {
+  padding: 12px 0;
+  text-align: center;
+}

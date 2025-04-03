@@ -177,10 +177,10 @@ footer {
 /* Media queries*/
 @media (min-width: 700px) {
   :root {
-    --background: url(assets/bg-desktop.jpg);
+    --background: url(Assets/bg-desktop.jpg);
   }
   .light {
-    --background: url(.Assets/bg-desktop-light.jpg);
+    --background: url(Assets/bg-desktop-light.jpg);
   }
 }
 /* Animations */

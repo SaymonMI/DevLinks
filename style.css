@@ -7,21 +7,21 @@
 :root {
   /*Serve para trocar o modos*/
   --text-color: white;
-  --background: url(Assets/bg-mobile.jpg);
+  --background: url(https://saymonmi.github.io/DevLinks/Assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(255, 255, 255, 0.041);
-  --backgrund-button: url(Assets/MoonStars.svg);
+  --backgrund-button: url(https://saymonmi.github.io/DevLinks/Assets/MoonStars.svg);
 }
 
 .light {
   /*Serve para trocar o modos*/
   --text-color: black;
-  --background: url(Assets/bg-mobile-light.jpg);
+  --background: url(https://saymonmi.github.io/DevLinks/Assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.1);
-  --backgrund-button: url(Assets/Sun.svg);
+  --backgrund-button: url(https://saymonmi.github.io/DevLinks/Assets/Sun.svg);
 }
 /*Corpo*/
 body {
@@ -177,10 +177,10 @@ footer {
 /* Media queries*/
 @media (min-width: 700px) {
   :root {
-    --background: url(assets/bg-desktop.jpg);
+    --background: url(https://saymonmi.github.io/DevLinks/assets/bg-desktop.jpg);
   }
   .light {
-    --background: url(Assets/bg-desktop-light.jpg);
+    --background: url(https://saymonmi.github.io/DevLinks/Assets/bg-desktop-light.jpg);
   }
 }
 /* Animations */

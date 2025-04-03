@@ -4,9 +4,9 @@ function toggleMode() {
 
   if (html.classList.contains("light")) {
     html.classList.remove("light");
-    img.setAttribute("src", "assets/avatar.jpg");
+    img.setAttribute("src", "Assets/avatar.jpg");
   } else {
     html.classList.add("light");
-    img.setAttribute("src", "assets/avatar-lightt.png");
+    img.setAttribute("src", "Assets/avatar-lightt.png");
   }
 }
